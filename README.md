@@ -9,7 +9,6 @@ Originally the challenge requirement was to create a simple text encoder with 5 
 * React
 * Javasript
 * Sass
-* Axios
 
 ### `UI`
 
@@ -20,7 +19,7 @@ The recommended [ Figma layout ](https://www.figma.com/file/trP3p5nEh7XUyB3n2bom
 
 ## Current Progress
 - [x] Create UI prototype based on Figma model
-- [ ] Separate into react components
+- [x] Separate into react components
 - [ ] Add interactivity with buttons and text inputs
 - [ ] Encode/Decode logic
 - [ ] Connect logic with inputs/outputs

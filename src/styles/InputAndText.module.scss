@@ -1,0 +1,15 @@
+@import "./../App.scss";
+
+.textareaContainer {
+  display: inline-flex;
+  position: absolute;
+  left: 11%;
+  top: 9rem;
+  width: 48%;
+  height: 68vh;
+  textarea {
+    border: none;
+    resize: none;
+    width: 100%;
+  }
+}

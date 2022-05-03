@@ -1,0 +1,40 @@
+@import "./../App.scss";
+
+@mixin button {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 45%;
+  min-width: 120px;
+  min-height: 50px;
+  // padding: 2rem;
+  border: 1px solid $primaryColor;
+  border-radius: 24px;
+  background-color: $thirdColor;
+  color: $primaryColor;
+  left: 11%;
+  top: 110px;
+}
+
+.fileButton {
+  @include button;
+  width: 20%;
+  min-width: 150px;
+}
+.primaryButton {
+  @include button;
+  position: static;
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+.secondaryButton {
+  @include button;
+  position: static;
+  color: $primaryColor;
+}
+.copyButton {
+  @include button;
+  position: static;
+   background-color: white;
+}

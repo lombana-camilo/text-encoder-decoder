@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$primaryColor: darkblue;
+$secondaryColor: #f3f5fc;
+$thirdColor: #d8dfe8;
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img{
+   max-width: 100%;
+   height: auto;
+}
