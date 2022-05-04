@@ -1,11 +1,16 @@
 import s from "./../styles/InputAndText.module.scss";
 import b from "./../styles/buttons.module.scss";
-const InputAndText = () => {
+
+const InputAndText = ({ onUpload, onType, text }) => {
+
   return (
     <>
-      <button className={b.fileButton}>Choose File</button>
+      <label className={b.fileButton}>
+        <input type="file" style={{display:"none"}} onChange={(e)=>onUpload(e.target.files[0])}/> Choose File
+      </label>
       <div className={s.textareaContainer}>
-        <textarea name="textarea"></textarea>
+        <textarea onChange={(e)=>onType(e.target.value)} value={text}>
+            </textarea>
       </div>
     </>
   );

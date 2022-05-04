@@ -15,12 +15,15 @@
   color: $primaryColor;
   left: 11%;
   top: 110px;
+  cursor: pointer;
 }
 
 .fileButton {
-  @include button;
-  width: 20%;
-  min-width: 150px;
+    @include button;
+    width: 20%;
+    min-width: 150px;
+    font-size: 16px;
+   padding: 1rem 2rem;
 }
 .primaryButton {
   @include button;
@@ -35,6 +38,8 @@
 }
 .copyButton {
   @include button;
+  width: 80%;
   position: static;
-   background-color: white;
+  background-color: white;
+  margin-bottom: 10%;
 }

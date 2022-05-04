@@ -20,6 +20,6 @@ The recommended [ Figma layout ](https://www.figma.com/file/trP3p5nEh7XUyB3n2bom
 ## Current Progress
 - [x] Create UI prototype based on Figma model
 - [x] Separate into react components
-- [ ] Add interactivity with buttons and text inputs
-- [ ] Encode/Decode logic
+- [x] Encode logic for input files and text input
+- [ ] Decode logic for input files and text input
 - [ ] Connect logic with inputs/outputs

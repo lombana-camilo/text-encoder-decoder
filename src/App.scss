@@ -22,7 +22,16 @@ a {
   text-decoration: none;
 }
 
-img{
-   max-width: 100%;
-   height: auto;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  padding: 7%;
+  border: none;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  height: 100%;
 }

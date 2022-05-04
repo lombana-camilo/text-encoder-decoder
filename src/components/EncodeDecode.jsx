@@ -1,10 +1,10 @@
 import s from "../styles/EncodeDecode.module.scss";
 import b from "../styles/buttons.module.scss";
 
-const EncodeDecode = () => {
+const EncodeDecode = ({encode}) => {
   return (
     <div className={s.buttonsContainer}>
-      <button className={b.primaryButton}>Encode</button>
+      <button className={b.primaryButton} onClick={()=>encode()}>Encode</button>
       <button className={b.secondaryButton}>Decode</button>
     </div>
   );
