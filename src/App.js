@@ -9,7 +9,7 @@ import { useState } from "react";
 function App() {
   const [file, setFile] = useState([]);
   const [text, setText] = useState("");
-  const [encodedText, setEncodedText] = useState("");
+  const [output, setOutput] = useState("");
   let reader = new FileReader();
 
   const onType = (inputText) => {
@@ -17,7 +17,7 @@ function App() {
       setText(inputText);
     } else {
       setText("");
-      setEncodedText("");
+      setOutput("");
     }
   };
 
@@ -32,18 +32,29 @@ function App() {
   const encode = () => {
     if (file.name) {
       reader.readAsDataURL(file);
-      reader.onload = () => setEncodedText(reader.result.split(",")[1]);
+      reader.onload = () => setOutput(reader.result.split(",")[1]);
       setFile([]);
       return;
     }
-    setEncodedText(btoa(text));
+    setOutput(btoa(text));
   };
+
+  const decode = () => {
+      if (file.name) {
+        reader.readAsText(file) 
+         reader.onload = ()=> setOutput(()=>{
+            return atob(reader.result)
+         })
+      }
+    setOutput(atob(output));
+  };
+
   return (
     <>
       <Logo />
       <InputAndText onType={onType} onUpload={onUpload} text={text} />
-      {text ? <Output output={encodedText} /> : <NotFound />}
-      <EncodeDecode encode={encode} />
+      {text ? <Output output={output} /> : <NotFound />}
+      <EncodeDecode encode={encode} decode={decode} />
     </>
   );
 }
