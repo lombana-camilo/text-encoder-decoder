@@ -1,9 +1,12 @@
+@import "./../App.scss";
+
 .outputText {
   display: inline-flex;
   position: absolute;
   right: 7%;
   top: 5vh;
-  background-color: white;
+  background-color: $lightColor;
+   color: $primaryColor;
   flex-direction: column;
   align-items: center;
   justify-content: center;

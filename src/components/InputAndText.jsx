@@ -9,7 +9,7 @@ const InputAndText = ({ onUpload, onType, text }) => {
         <input type="file" style={{display:"none"}} onChange={(e)=>onUpload(e.target.files[0])}/> Choose File
       </label>
       <div className={s.textareaContainer}>
-        <textarea onChange={(e)=>onType(e.target.value)} value={text}>
+        <textarea placeholder="Start typing here, or upload a file..." onChange={(e)=>onType(e.target.value)} value={text}>
             </textarea>
       </div>
     </>
