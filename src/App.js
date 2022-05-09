@@ -8,6 +8,7 @@ import { useRef, useState } from "react";
 
 function App() {
   const [file, setFile] = useState([]);
+  const [fileType, setFileType] = useState("");
   const [text, setText] = useState("");
   const [output, setOutput] = useState("");
   const textAreaRef = useRef(null);
@@ -23,8 +24,8 @@ function App() {
   };
 
   const onUpload = (file) => {
-    // console.log(file)
     if (!file) return;
+    setFileType(file.name.split(".")[1]);
     setFile(file);
     reader.readAsText(file);
     reader.onload = () => setText(reader.result);
@@ -43,24 +44,47 @@ function App() {
   const decode = () => {
     if (file.name) {
       reader.readAsText(file);
-      reader.window.onload = () =>
-        setOutput(() => {
-          return window.atob(reader.result);
-        });
+      reader.onload = () =>
+        setOutput(() => window.atob(reader.result));
     }
-    setOutput(window.atob(output));
+    setOutput(()=>window.atob(text));
   };
 
   const copyText = () => {
-      textAreaRef.current.select()
-      navigator.clipboard.writeText(textAreaRef.current.value)
-   };
+    textAreaRef.current.select();
+    navigator.clipboard.writeText(textAreaRef.current.value);
+  };
+
+  const downFunction = () => {
+    const downFile = new Blob([output], { type: "octet-stream" });
+    const href = URL.createObjectURL(downFile);
+    //create internal link
+    const link = Object.assign(document.createElement("a"), {
+      href,
+      style: "display:none",
+      download: `Encoded.${fileType || "txt"}`,
+    });
+    document.body.appendChild(link);
+    link.click();
+    //remove it from memory
+    URL.revokeObjectURL(href);
+    link.remove();
+  };
 
   return (
     <>
       <Logo />
       <InputAndText onType={onType} onUpload={onUpload} text={text} />
-      {text ? <Output output={output} copyText={copyText} textAreaRef={textAreaRef}/> : <NotFound />}
+      {text ? (
+        <Output
+          output={output}
+          copyText={copyText}
+          textAreaRef={textAreaRef}
+          downFunction={downFunction}
+        />
+      ) : (
+        <NotFound />
+      )}
       <EncodeDecode encode={encode} decode={decode} />
     </>
   );
