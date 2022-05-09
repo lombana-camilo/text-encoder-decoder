@@ -15,10 +15,11 @@
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   p {
-    padding: 10%;
+    padding: 2%;
     border: none;
-    line-height: 150%;
     text-align: center;
+    font-size: 16px;
+    line-height: 24px;
   }
   img {
     height: 30%;
@@ -27,15 +28,13 @@
 
 @include tablet {
   .outputText {
-    top: 80%;
-    height: 16vh;
+    top: 75%;
+    height: 17vh;
     width: 90%;
     right: 5%;
-
     p {
-      padding: 2%;
+      padding: 1%;
     }
-
     img {
       display: none;
     }

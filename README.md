@@ -23,4 +23,4 @@ The recommended [ Figma layout ](https://www.figma.com/file/trP3p5nEh7XUyB3n2bom
 - [x] Encode logic for input files and text input
 - [x] Decode logic for input files and text input
 - [x] Download button
-- [ ] Finish up responsiveness
+- [x] Making app responsive for tablet and phone sizes

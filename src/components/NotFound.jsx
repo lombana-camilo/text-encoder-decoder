@@ -5,7 +5,7 @@ const NotFound = () => {
    return (
       <div className={s.outputText}>
          <img src={ nofound } alt="" />
-         <h3>No text was found</h3>
+         <h4>No text was found</h4>
          <p>Type in or upload a file with the text to be encoded/decoded</p>
       </div>
    )

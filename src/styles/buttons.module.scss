@@ -1,20 +1,13 @@
 @import "./../App.scss";
 
 @mixin button {
-  display: flexbox;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 45%;
-  min-width: 120px;
-  min-height: 50px;
-  border: 1px solid $primaryColor;
+  width: 47%;
   border-radius: 20px;
   background-color: transparent;
   border: 4px solid $primaryColor;
   color: $lightColor;
   font-weight: 800;
-  font-size: 21px;
+  font-size: 16px;
   left: 11%;
   top: 110px;
   cursor: pointer;
@@ -22,58 +15,41 @@
   &:hover {
     background-color: $primaryColor;
   }
-   @include tablet {
-}
-
+  @include phone {
+    width: 90%;
+  }
 }
 
 .fileButton {
   @include button;
-  width: 20%;
-  min-width: 150px;
-  padding: 1rem 2rem;
+  position: relative;
+  padding: 0.5rem 2rem;
+  @include tablet {
+    padding: 0.8rem 2.5rem;
+  }
 }
 .primaryButton {
   @include button;
-  position: static;
   border: 4px solid $secondaryColor;
   &:hover {
     background-color: $secondaryColor;
   }
+  @include phone {
+   margin-bottom: 2%;
+  }
 }
 .secondaryButton {
   @include button;
-  position: static;
 }
 .copyButton {
   @include button;
-  width: 80%;
-  position: static;
   background-color: $bgColor;
-  margin-bottom: 3%;
-   @include tablet {
-      height: 45%;
-      margin-bottom: 2%;
-      
-}
 }
 .downloadButton {
   @include button;
-  width: 80%;
-  position: static;
   background-color: transparent;
-  margin-bottom: 10%;
   color: $bgColor;
   &:hover {
     color: #fff;
   }
-   @include tablet {
-      height: 45%;
-      margin-bottom: 2%;
-      
-}
-}
-
-@include tablet {
-    display: none;
 }

@@ -11,8 +11,16 @@
 
 @include tablet{
    .buttonsContainer{
-      top: 70%;
+      top: 55%;
       left: 5%;
       width: 90%;
+   }
+}
+@include phone{
+   .buttonsContainer{
+      flex-direction: column;
+      align-items: center;
+      left: 0;
+      width: 100%;
    }
 }
