@@ -6,7 +6,7 @@
   right: 7%;
   top: 5vh;
   background-color: $lightColor;
-   color: $primaryColor;
+  color: $primaryColor;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -22,5 +22,22 @@
   }
   img {
     height: 30%;
+  }
+}
+
+@include tablet {
+  .outputText {
+    top: 80%;
+    height: 16vh;
+    width: 90%;
+    right: 5%;
+
+    p {
+      padding: 2%;
+    }
+
+    img {
+      display: none;
+    }
   }
 }

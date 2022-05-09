@@ -14,3 +14,11 @@
     display: none;
   }
 }
+
+@include tablet{
+   .textareaContainer{
+      width: 90%;
+      height: 50vh;
+      left: 2%;
+   }
+}

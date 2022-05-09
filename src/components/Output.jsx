@@ -5,8 +5,10 @@ const Output = ({output, copyText, textAreaRef, downFunction}) => {
    return (
       <div className={s.outputText}>
          <textarea defaultValue={output} ref={textAreaRef}></textarea>
-         <button className={b.copyButton} onClick={()=>copyText()} >Copy Text</button>
-         <button className={b.downloadButton} onClick={downFunction}>Download</button>
+         <div>
+            <button className={b.copyButton} onClick={()=>copyText()} >Copy Text</button>
+            <button className={b.downloadButton} onClick={downFunction}>Download</button>
+         </div>
       </div>
    )
 }

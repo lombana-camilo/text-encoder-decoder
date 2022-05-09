@@ -22,5 +22,5 @@ The recommended [ Figma layout ](https://www.figma.com/file/trP3p5nEh7XUyB3n2bom
 - [x] Separate into react components
 - [x] Encode logic for input files and text input
 - [x] Decode logic for input files and text input
-- [ ] Download button
+- [x] Download button
 - [ ] Finish up responsiveness
