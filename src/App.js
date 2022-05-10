@@ -4,6 +4,7 @@ import InputAndText from "./components/InputAndText.jsx";
 import NotFound from "./components/NotFound.jsx";
 import Output from "./components/Output.jsx";
 import EncodeDecode from "./components/EncodeDecode.jsx";
+import Footer from "./components/Footer.jsx"
 import { useRef, useState } from "react";
 
 function App() {
@@ -85,7 +86,8 @@ function App() {
       ) : (
         <NotFound />
       )}
-      <EncodeDecode encode={encode} decode={decode} />
+       <EncodeDecode encode={encode} decode={decode} />
+         <Footer/>
     </>
   );
 }

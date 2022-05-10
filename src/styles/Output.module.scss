@@ -7,13 +7,13 @@
   right: 7%;
   top: 5vh;
   background-color: $lightColor;
-   padding: 1.5%;
+  padding: 1.5%;
   color: $primaryColor;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 25%;
-  height: 90vh;
+  height: 86vh;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   textarea {
@@ -35,8 +35,8 @@
 
 @include tablet {
   .outputText {
-    top: 67%;
-    height: 32vh;
+    top: 63%;
+    height: 28vh;
     width: 90%;
     right: 5%;
   }
@@ -44,7 +44,7 @@
 @include phone {
   .outputText {
     justify-content: center;
-      top: 71%;
+    top: 71%;
     height: 27vh;
   }
 }
