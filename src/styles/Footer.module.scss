@@ -2,7 +2,7 @@
 
 .footer {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: absolute;
   width: 100%;
@@ -10,7 +10,7 @@
   bottom: 0;
   background-image: linear-gradient($bgColor, #031529);
   p {
-    font-size: 20px;
+    font-size: 19px;
     font-style: italic;
   }
 }
@@ -18,5 +18,10 @@
 @include tablet {
   .footer  p {
     font-size: 16px;
+  }
+}
+@include phone {
+  .footer  p {
+      display: none;
   }
 }

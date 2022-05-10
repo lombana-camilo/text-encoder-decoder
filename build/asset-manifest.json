@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/text-encoder-decoder/static/css/main.e1f78e60.css",
+    "main.js": "/text-encoder-decoder/static/js/main.e8cf7daf.js",
+    "static/media/Muñeco.png": "/text-encoder-decoder/static/media/Muñeco.bc7ff7467acf2ae2f86e.png",
+    "index.html": "/text-encoder-decoder/index.html",
+    "main.e1f78e60.css.map": "/text-encoder-decoder/static/css/main.e1f78e60.css.map",
+    "main.e8cf7daf.js.map": "/text-encoder-decoder/static/js/main.e8cf7daf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1f78e60.css",
+    "static/js/main.e8cf7daf.js"
+  ]
+}

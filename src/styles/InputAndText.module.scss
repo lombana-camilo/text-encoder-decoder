@@ -7,7 +7,7 @@
   left: 10%;
   top: 7rem;
   width: 48%;
-  height: 67vh;
+  height: 58vh;
 }
 .label {
   input {
@@ -18,8 +18,8 @@
 @include tablet{
    .textareaContainer{
       width: 95%;
-      height: 41vh;
-      top: 10rem;
+      height: 34vh;
+      top: 9rem;
       left: 2%;
    }
 }
