@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/text-encoder-decoder/static/css/main.f5ae7a16.css",
-    "main.js": "/text-encoder-decoder/static/js/main.686d75f6.js",
-    "static/media/Muñeco.png": "/text-encoder-decoder/static/media/Muñeco.bc7ff7467acf2ae2f86e.png",
-    "index.html": "/text-encoder-decoder/index.html",
-    "main.f5ae7a16.css.map": "/text-encoder-decoder/static/css/main.f5ae7a16.css.map",
-    "main.686d75f6.js.map": "/text-encoder-decoder/static/js/main.686d75f6.js.map"
+    "main.css": "/lombana-camilo/text-encoder-decoder/static/css/main.16f93337.css",
+    "main.js": "/lombana-camilo/text-encoder-decoder/static/js/main.fe1ddebd.js",
+    "static/media/Muñeco.png": "/lombana-camilo/text-encoder-decoder/static/media/Muñeco.bc7ff7467acf2ae2f86e.png",
+    "index.html": "/lombana-camilo/text-encoder-decoder/index.html",
+    "main.16f93337.css.map": "/lombana-camilo/text-encoder-decoder/static/css/main.16f93337.css.map",
+    "main.fe1ddebd.js.map": "/lombana-camilo/text-encoder-decoder/static/js/main.fe1ddebd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5ae7a16.css",
-    "static/js/main.686d75f6.js"
+    "static/css/main.16f93337.css",
+    "static/js/main.fe1ddebd.js"
   ]
 }
