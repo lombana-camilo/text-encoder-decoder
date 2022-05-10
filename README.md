@@ -2,7 +2,7 @@
 
 This app is the one of the challenges that comprise the program: *ONE - Oracle Next Education + Alura*
 
-Originally the challenge requirement was to create a simple text encoder with 5 key-value rules (one code for each vowel). Nevertheless, I enhanced the app by using the Base64 binary-to-text encoding scheme and also allowing files instead of text as inputs.
+Originally the challenge requirement was to create a simple text encoder with 5 key-value rules (one code for each vowel). Nevertheless, I enhanced the app by using the Base64 binary-to-text encoding scheme and also allowing files to be uploaded, edited and downloaded after being encoded.
 
 ## Development Tools
 
