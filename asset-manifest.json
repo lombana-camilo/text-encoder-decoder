@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/lombana-camilo/text-encoder-decoder/static/css/main.6d28ac15.css",
-    "main.js": "/lombana-camilo/text-encoder-decoder/static/js/main.d723bc2d.js",
-    "static/media/Muñeco.png": "/lombana-camilo/text-encoder-decoder/static/media/Muñeco.bc7ff7467acf2ae2f86e.png",
-    "index.html": "/lombana-camilo/text-encoder-decoder/index.html",
-    "main.6d28ac15.css.map": "/lombana-camilo/text-encoder-decoder/static/css/main.6d28ac15.css.map",
-    "main.d723bc2d.js.map": "/lombana-camilo/text-encoder-decoder/static/js/main.d723bc2d.js.map"
+    "main.css": "/lombana-camilo/text-encoder-decoder.git/static/css/main.6d28ac15.css",
+    "main.js": "/lombana-camilo/text-encoder-decoder.git/static/js/main.a6b4721d.js",
+    "static/media/Muñeco.png": "/lombana-camilo/text-encoder-decoder.git/static/media/Muñeco.bc7ff7467acf2ae2f86e.png",
+    "index.html": "/lombana-camilo/text-encoder-decoder.git/index.html",
+    "main.6d28ac15.css.map": "/lombana-camilo/text-encoder-decoder.git/static/css/main.6d28ac15.css.map",
+    "main.a6b4721d.js.map": "/lombana-camilo/text-encoder-decoder.git/static/js/main.a6b4721d.js.map"
   },
   "entrypoints": [
     "static/css/main.6d28ac15.css",
-    "static/js/main.d723bc2d.js"
+    "static/js/main.a6b4721d.js"
   ]
 }
