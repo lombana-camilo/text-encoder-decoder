@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/text-encoder-decoder/static/css/main.c51ee447.css",
+    "main.css": "/text-encoder-decoder/static/css/main.55eb9735.css",
     "main.js": "/text-encoder-decoder/static/js/main.965f2278.js",
     "static/media/Muñeco.png": "/text-encoder-decoder/static/media/Muñeco.bc7ff7467acf2ae2f86e.png",
     "index.html": "/text-encoder-decoder/index.html",
-    "main.c51ee447.css.map": "/text-encoder-decoder/static/css/main.c51ee447.css.map",
+    "main.55eb9735.css.map": "/text-encoder-decoder/static/css/main.55eb9735.css.map",
     "main.965f2278.js.map": "/text-encoder-decoder/static/js/main.965f2278.js.map"
   },
   "entrypoints": [
-    "static/css/main.c51ee447.css",
+    "static/css/main.55eb9735.css",
     "static/js/main.965f2278.js"
   ]
 }
